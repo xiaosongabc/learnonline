@@ -1,0 +1,25 @@
+# ByteTrack settings tuned for fixed station-room surveillance videos.
+# Used by pedestrian_detector.py via Ultralytics YOLO model.track(..., tracker=...).
+
+tracker_type: bytetrack
+
+# 高分检测框匹配阈值：过滤虚影、设备误检。
+track_high_thresh: 0.5
+
+# 低分框阈值：遮挡时保留人体候选框。
+track_low_thresh: 0.25
+
+# 新建人员 ID 门槛：降低反光/设备误检生成虚假人的概率。
+new_track_thresh: 0.6
+
+# 遮挡缓存帧数：90 帧约等于 3 秒（30 FPS），机柜短时遮挡不丢 ID。
+track_buffer: 90
+
+# 匹配距离阈值：适当放宽可减少同一人因框抖动/短遮挡重新分配 ID。
+match_thresh: 0.8
+
+# 融合检测置信度与匹配分数。
+fuse_score: true
+
+# 固定摄像头场景：关闭全局运动补偿。
+gmc_method: none
