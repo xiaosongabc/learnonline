@@ -1,0 +1,6 @@
+﻿id,call_info_id,source_id,department_id,call_department,call_way,call_department_number,call_department_name
+1,7983,905,540,应急局,电话,13636846118,
+2,7983,914,541,农业农村局,电话,13109684616,
+3,7983,915,542,交通局,电话,18609129177,
+4,7983,916,543,水利局,电话,13636843088,
+5,7983,918,545,林业局,电话,18109123388,
